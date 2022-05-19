@@ -1,0 +1,303 @@
+﻿@{
+    ViewData["Title"] = "New Ticket";
+}
+
+<!--begin::Content-->
+<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+
+    <!--begin::Toolbar-->
+    <div class="toolbar" id="kt_toolbar">
+        <!--begin::Container-->
+        <div id="kt_toolbar_container" class="container-fluid d-flex flex-stack">
+            <!--begin::Page title-->
+            <div data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_content_container', 'lg': '#kt_toolbar_container'}" class="page-title d-flex align-items-center flex-wrap me-3 mb-5 mb-lg-0">
+                <!--begin::Title-->
+                <h1 class="d-flex align-items-center text-dark fw-bolder my-1 fs-3">
+                    Create New Ticket
+                    <!--begin::Separator-->
+                    <span class="h-20px border-gray-200 border-start ms-3 mx-2"></span>
+                    <!--end::Separator-->
+                    <!--begin::Description-->
+                    <small class="text-muted fs-7 fw-bold my-1 ms-1"></small>
+                    <!--end::Description-->
+                </h1>
+                <!--end::Title-->
+            </div>
+            <!--end::Page title-->
+            <!--begin::Actions-->
+            <div class="d-flex align-items-center py-1">
+                <!--begin::Wrapper-->
+                <div class="me-4">
+                    <!--begin::Menu-->
+                    <!--end::Menu-->
+                </div>
+                <!--end::Wrapper-->
+                <!--begin::Button-->
+                <!--end::Button-->
+            </div>
+            <!--end::Actions-->
+        </div>
+        <!--end::Container-->
+    </div>
+    <!--end::Toolbar-->
+    <!--begin::Post-->
+    <div class="post d-flex flex-column-fluid" id="kt_post">
+        <!--begin::Container-->
+        <div id="kt_content_container" class="container-xxl">
+            <div class="card mb-5 mb-xl-10">
+                <div class="card-header border-bottom cursor-pointer" role="button" data-bs-toggle="collapse" data-bs-target="#kt_account_profile_details" aria-expanded="true" aria-controls="kt_account_profile_details">
+                    <!--begin::Card title-->
+                    <div class="card-title m-0">
+                        <h3 class="fw-bolder m-0">Ticket Details</h3>
+                    </div>
+                    <!--end::Card title-->
+                </div><!--begin::Form-->
+                <form id="kt_ecommerce_settings_general_form" class="form" action="#">
+                    <div class="card-body pt-9 pb-0">
+                        <div class="row">
+                            <div class="col-md-8 offset-md-2">
+
+                                <!--begin::Input group-->
+                                <div class="fv-row mb-7">
+                                    <!--begin::Label-->
+                                    <label class="fs-6 fw-bold form-label mt-3">
+                                        <span class="required">Email</span>
+                                        <i class="fas fa-exclamation-circle ms-1 fs-7" data-bs-toggle="tooltip" title="Enter email"></i>
+                                    </label>
+                                    <!--end::Label-->
+                                    <!--begin::Input-->
+                                    <input type="text" class="form-control form-control-solid" name="email" value="" placeholder="Enter email" />
+                                    <!--end::Input-->
+                                </div>
+                                <!--end::Input group-->
+                                <!--begin::Input group-->
+                                <div class="fv-row mb-7">
+                                    <!--begin::Label-->
+                                    <label class="fs-6 fw-bold form-label mt-3">
+                                        <span class="required">Subject</span>
+                                        <i class="fas fa-exclamation-circle ms-1 fs-7" data-bs-toggle="tooltip" title="Enter subject"></i>
+                                    </label>
+                                    <!--end::Label-->
+                                    <!--begin::Input-->
+                                    <input type="text" class="form-control form-control-solid" name="subject" value="" placeholder="Enter subject" />
+                                    <!--end::Input-->
+                                </div>
+                                <!--end::Input group-->
+                                <!--begin::Input group-->
+                                <div class="fv-row mb-7">
+                                    <!--begin::Label-->
+                                    <label class="fs-6 fw-bold form-label mt-3">
+                                        <span class="required">Group</span>
+                                    </label>
+                                    <!--end::Label-->
+                                    <div class="w-100">
+                                        <div class="form-floating border rounded">
+                                            <!--begin::Select2-->
+                                            <select id="group"
+                                                    data-allow-clear="true"
+                                                    data-control="select2"
+                                                    data-hide-search="true"
+                                                    data-placeholder="Select a Group"
+                                                    class="form-select form-select-lg form-select-solid lh-2 py-3"
+                                                    name="group">
+                                                <option></option>
+                                                <option value="1">IT Support</option>
+                                                <option value="2">Billing</option>
+                                                <option value="3">Customer Support</option>
+                                            </select>
+                                            <!--end::Select2-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end::Input group-->
+                                <!--begin::Input group-->
+                                <div class="fv-row mb-7">
+                                    <!--begin::Label-->
+                                    <label class="fs-6 fw-bold form-label mt-3">
+                                        <span class="required">Type</span>
+                                    </label>
+                                    <!--end::Label-->
+                                    <div class="w-100">
+                                        <div class="form-floating border rounded">
+                                            <!--begin::Select2-->
+                                            <select id="type"
+                                                    data-allow-clear="true"
+                                                    data-control="select2"
+                                                    data-hide-search="true"
+                                                    data-placeholder="Select a Type"
+                                                    class="form-select form-select-lg form-select-solid lh-2 py-3"
+                                                    name="type">
+                                                <option></option>
+                                                <option value="1">Question</option>
+                                                <option value="2">Problem</option>
+                                                <option value="3">Feature</option>
+                                                <option value="4">Other</option>
+                                            </select>
+                                            <!--end::Select2-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end::Input group-->
+                                <!--begin::Input group-->
+                                <div class="fv-row mb-7">
+                                    <!--begin::Label-->
+                                    <label class="fs-6 fw-bold form-label mt-3">
+                                        <span class="required">Source</span>
+                                    </label>
+                                    <!--end::Label-->
+                                    <div class="w-100">
+                                        <div class="form-floating border rounded">
+                                            <!--begin::Select2-->
+                                            <select id="source" name="source"
+                                                    data-allow-clear="true"
+                                                    data-control="select2"
+                                                    data-hide-search="true"
+                                                    data-placeholder="Select a Source"
+                                                    class="form-select form-select-lg form-select-solid lh-2 py-3">
+                                                <option></option>
+                                                <option value="1">External</option>
+                                                <option value="2">Internal</option>
+                                            </select>
+                                            <!--end::Select2-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end::Input group-->
+                                <!--begin::Input group-->
+                                <div class="fv-row mb-7">
+                                    <!--begin::Label-->
+                                    <label class="fs-6 fw-bold form-label mt-3">
+                                        <span class="required">Status</span>
+                                    </label>
+                                    <!--end::Label-->
+                                    <div class="w-100">
+                                        <div class="form-floating border rounded">
+                                            <!--begin::Select2-->
+                                            <select id="status" name="status"
+                                                    data-allow-clear="true"
+                                                    data-control="select2"
+                                                    data-hide-search="true"
+                                                    data-placeholder="Select a Status"
+                                                    class="form-select form-select-lg form-select-solid lh-2 py-3">
+                                                <option></option>
+                                                <option value="1">Open</option>
+                                                <option value="2">Pending</option>
+                                                <option value="3">Closed</option>
+                                                <option value="4">Resolved</option>
+                                                <option value="5">Over due</option>
+                                                <option value="6">Waiting on third party</option>
+                                            </select>
+                                            <!--end::Select2-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end::Input group-->
+                                <!--begin::Input group-->
+                                <div class="fv-row mb-7">
+                                    <!--begin::Label-->
+                                    <label class="fs-6 fw-bold form-label mt-3">
+                                        <span class="required">Priority</span>
+                                    </label>
+                                    <!--end::Label-->
+                                    <div class="w-100">
+                                        <div class="form-floating border rounded">
+                                            <!--begin::Select2-->
+                                            <select id="priority" name="priority"
+                                                    data-allow-clear="true"
+                                                    data-control="select2"
+                                                    data-hide-search="true"
+                                                    data-placeholder="Select priority"
+                                                    class="form-select form-select-lg form-select-solid lh-2 py-3">
+                                                <option></option>
+                                                <option value="1">High</option>
+                                                <option value="2">Medium</option>
+                                                <option value="3">Low</option>
+                                            </select>
+                                            <!--end::Select2-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end::Input group-->
+                                <!--begin::Input group-->
+                                <div class="fv-row mb-7">
+                                    <!--begin::Label-->
+                                    <label class="fs-6 fw-bold form-label mt-3">
+                                        <span class="required">Agent</span>
+                                    </label>
+                                    <!--end::Label-->
+                                    <div class="w-100">
+                                        <div class="form-floating border rounded">
+                                            <!--begin::Select2-->
+                                            <select id="agent"
+                                                    data-allow-clear="true"
+                                                    data-control="select2"
+                                                    class="form-select form-select-lg form-select-solid lh-2 py-3"
+                                                    name="agent"
+                                                    data-placeholder="Select an Agent">
+                                                <option></option>
+                                                <option value="1">Muhammad Ali Taj</option>
+                                                <option value="2">Tayyab Ali</option>
+                                            </select>
+                                            <!--end::Select2-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end::Input group-->
+                                <!--begin::Input group-->
+                                <div class="fv-row mb-7">
+                                    <!--begin::Label-->
+                                    <label class="fs-6 fw-bold form-label mt-3">
+                                        <span class="required">Comments (If Any)</span>
+                                    </label>
+                                    <!--end::Label-->
+                                    <div class="w-100">
+                                        <textarea class="form-control form-control-solid"
+                                                  name="comments" value="" placeholder="Enter comments" rows="4"></textarea>
+                                    </div>
+                                </div>
+                                <!--end::Input group-->
+                                <!--begin::Input group-->
+                                <div class="fv-row mb-7">
+                                    <!--begin::Label-->
+                                    <label class="fs-6 fw-bold form-label mt-3">
+                                        <span class="required">Tags</span>
+                                    </label>
+                                    <!--end::Label-->
+                                    <div class="w-100">
+                                        <input class="form-control form-control-solid d-flex align-items-center" value="" id="tags" />
+                                    </div>
+                                </div>
+                                <!--end::Input group-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-footer d-flex justify-content-end py-6 px-9">
+                        <button type="reset" class="btn btn-light btn-active-light-primary me-2">Discard</button>
+                        <button type="submit" class="btn btn-primary" id="kt_account_profile_details_submit">Save Changes</button>
+                    </div>
+                </form>
+                <!--end::Form-->
+            </div>
+            <!--end::Container-->
+        </div>
+        <!--end::Post-->
+    </div>
+    <!--end::Content-->
+    @section Scripts{
+        <script>
+            $(function() {
+                var inputTags = document.querySelector("#tags");
+                new Tagify(inputTags, {
+                    whitelist: ["Ada", "Adenine", "Agda", "Agilent VEE"],
+                    maxTags: 10,
+                    dropdown: {
+                        maxItems: 20,           // <- mixumum allowed rendered suggestions
+                        classname: "tagify__inline__suggestions", // <- custom classname for this dropdown, so it could be targeted
+                        enabled: 0,             // <- show suggestions on focus
+                        closeOnSelect: false    // <- do not hide the suggestions dropdown once an item has been selected
+                    }
+                });
+            })
+        </script>
+    }

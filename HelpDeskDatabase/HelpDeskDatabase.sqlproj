@@ -56,19 +56,22 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Tables" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Tickets.sql" />
-    <Build Include="Groups.sql" />
-    <Build Include="Types.sql" />
-    <Build Include="Sources.sql" />
-    <Build Include="TicketStates.sql" />
-    <Build Include="Priorities.sql" />
-    <Build Include="Attachments.sql" />
-    <Build Include="Tags.sql" />
-    <Build Include="Users.sql" />
+    <Build Include="Tables\Attachments.sql" />
+    <Build Include="Tables\Groups.sql" />
+    <Build Include="Tables\Priorities.sql" />
+    <Build Include="Tables\Sources.sql" />
+    <Build Include="Tables\Tags.sql" />
+    <Build Include="Tables\Tickets.sql" />
   </ItemGroup>
   <ItemGroup>
-    <RefactorLog Include="HelpDeskDatabase.refactorlog" />
+    <RefactorLog Include="Tables\HelpDeskDatabase.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\TicketStates.sql" />
+    <Build Include="Tables\Types.sql" />
+    <Build Include="Tables\Users.sql" />
   </ItemGroup>
 </Project>

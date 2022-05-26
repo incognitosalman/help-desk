@@ -1,4 +1,4 @@
-# help-desk
+# Help Desk
 Help Desk using ASP.NET Core MVC
 
 # Scaffolding DbContext - Existing Database

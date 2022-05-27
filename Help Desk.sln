@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32505.173
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{B0322B0E-4F57-4ABA-A86D-25D9E51880E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDesk.Domain", "HelpDesk.Domain\HelpDesk.Domain.csproj", "{B0322B0E-4F57-4ABA-A86D-25D9E51880E4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{F1EAF80F-37AA-43CB-B1AE-1AFAF3489933}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDesk.Application", "HelpDesk.Application\HelpDesk.Application.csproj", "{F1EAF80F-37AA-43CB-B1AE-1AFAF3489933}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{D453C5EA-361F-471D-9A72-77D858C218E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDesk.Infrastructure", "HelpDesk.Infrastructure\HelpDesk.Infrastructure.csproj", "{D453C5EA-361F-471D-9A72-77D858C218E5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "WebApp\WebApp.csproj", "{1F1F5761-A2BF-4753-B1ED-A02AF43810BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDesk.WebApp", "HelpDesk.WebApp\HelpDesk.WebApp.csproj", "{1F1F5761-A2BF-4753-B1ED-A02AF43810BB}"
 EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "HelpDeskDatabase", "HelpDeskDatabase\HelpDeskDatabase.sqlproj", "{E3F0BFF2-5197-4540-85BF-5E9B93846521}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "HelpDesk.Database", "HelpDesk.Database\HelpDesk.Database.sqlproj", "{E3F0BFF2-5197-4540-85BF-5E9B93846521}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

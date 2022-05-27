@@ -59,19 +59,19 @@
     <Folder Include="Tables" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Tables\Attachments.sql" />
-    <Build Include="Tables\Groups.sql" />
-    <Build Include="Tables\Priorities.sql" />
-    <Build Include="Tables\Sources.sql" />
-    <Build Include="Tables\Tags.sql" />
-    <Build Include="Tables\Tickets.sql" />
+    <Build Include="Tables\TicketAttachment.sql" />
+    <Build Include="Tables\TicketGroup.sql" />
+    <Build Include="Tables\TicketPriority.sql" />
+    <Build Include="Tables\TicketSource.sql" />
+    <Build Include="Tables\TicketTag.sql" />
+    <Build Include="Tables\Ticket.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Tables\HelpDeskDatabase.refactorlog" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Tables\TicketStates.sql" />
-    <Build Include="Tables\Types.sql" />
+    <Build Include="Tables\TicketState.sql" />
+    <Build Include="Tables\TicketType.sql" />
     <Build Include="Tables\Users.sql" />
   </ItemGroup>
 </Project>

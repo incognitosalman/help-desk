@@ -1,0 +1,30 @@
+[
+  {
+    "Id": 1,
+    "Name": "Open"
+  },
+  {
+    "Id": 2,
+    "Name": "Pending"
+  },
+  {
+    "Id": 3,
+    "Name": "Closed"
+  },
+  {
+    "Id": 4,
+    "Name": "Resolved"
+  },
+  {
+    "Id": 5,
+    "Name": "Over Due"
+  },
+  {
+    "Id": 6,
+    "Name": "Waiting Customer"
+  },
+  {
+    "Id": 7,
+    "Name": "Waiting on Third Party"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "Id": 1,
+    "Name": "Internal"
+  },
+  {
+    "Id": 2,
+    "Name": "External"
+  }
+]

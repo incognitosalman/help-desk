@@ -1,0 +1,92 @@
+﻿@model TicketResponse
+@{
+    ViewData["Title"] = "Ticket Details";
+}
+
+<!--begin::Content-->
+<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+
+    <!--begin::Toolbar-->
+    <div class="toolbar" id="kt_toolbar">
+        <!--begin::Container-->
+        <div id="kt_toolbar_container" class="container-fluid d-flex flex-stack">
+            <!--begin::Page title-->
+            <div data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_content_container', 'lg': '#kt_toolbar_container'}" class="page-title d-flex align-items-center flex-wrap me-3 mb-5 mb-lg-0">
+                <!--begin::Title-->
+                <h1 class="d-flex align-items-center text-dark fw-bolder my-1 fs-3">
+                    Ticket # @Model.Id
+                    <!--begin::Separator-->
+                    <span class="h-20px border-gray-200 border-start ms-3 mx-2"></span>
+                    <!--end::Separator-->
+                    <!--begin::Description-->
+                    <small class="text-muted fs-7 fw-bold my-1 ms-1"></small>
+                    <!--end::Description-->
+                </h1>
+                <!--end::Title-->
+            </div>
+            <!--end::Page title-->
+            <!--begin::Actions-->
+            <div class="d-flex align-items-center py-1">
+                <!--begin::Wrapper-->
+                <div class="me-4">
+                    <!--begin::Menu-->
+                    <!--end::Menu-->
+                </div>
+                <!--end::Wrapper-->
+                <!--begin::Button-->
+                <!--end::Button-->
+            </div>
+            <!--end::Actions-->
+        </div>
+        <!--end::Container-->
+    </div>
+    <!--end::Toolbar-->
+    <!--begin::Post-->
+    <div class="post d-flex flex-column-fluid" id="kt_post">
+        <!--begin::Container-->
+        <div id="kt_content_container" class="container-xxl">
+            <div class="card mb-5 mb-xl-10">
+                <div class="card-header border-bottom cursor-pointer" role="button" data-bs-toggle="collapse" data-bs-target="#kt_account_profile_details" aria-expanded="true" aria-controls="kt_account_profile_details">
+                    <!--begin::Card title-->
+                    <div class="card-title m-0">
+                        <h3 class="fw-bolder m-0">
+                            @Model.Subject
+                        </h3>
+                    </div>
+                    <!--end::Card title-->
+                </div><!--begin::Form-->
+                <form id="kt_ecommerce_settings_general_form" class="form" action="#">
+                    <div class="card-body pt-9 pb-0">
+                        <div class="row">
+                            
+                        </div>
+                    </div>
+
+                    <div class="card-footer d-flex justify-content-end py-6 px-9">
+                    </div>
+                </form>
+                <!--end::Form-->
+            </div>
+        </div>
+        <!--end::Container-->
+    </div>
+    <!--end::Post-->
+</div>
+<!--end::Content-->
+@section Scripts{
+    <script>
+        $(function() {
+            var inputTags = document.querySelector("#tags");
+            new Tagify(inputTags, {
+                whitelist: ["Ada", "Adenine", "Agda", "Agilent VEE"],
+                maxTags: 10,
+                dropdown: {
+                    maxItems: 20,           // <- mixumum allowed rendered suggestions
+                    classname: "tagify__inline__suggestions", // <- custom classname for this dropdown, so it could be targeted
+                    enabled: 0,             // <- show suggestions on focus
+                    closeOnSelect: false    // <- do not hide the suggestions dropdown once an item has been selected
+                }
+            });
+        })
+    </script>
+    }

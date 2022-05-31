@@ -9,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<ITicketRepository, TicketRepository>();
+builder.Services.AddScoped<ITicketGroupRepository, TicketGroupRepository>();
 
 builder.Services.AddDbContext<HelpDeskContext>(options =>
 {

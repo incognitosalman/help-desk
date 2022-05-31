@@ -1,17 +1,21 @@
 ﻿using HelpDesk.Application.Contracts.Persistence;
 using HelpDesk.Domain.Entities;
-using HelpDesk.Domain.Resuests;
+using HelpDesk.WebApp.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace WebApp.Controllers
 {
     public class TicketsController : Controller
     {
         private readonly ITicketRepository _ticketRepository;
+        private readonly ITicketGroupRepository _ticketGroupRepository;
 
-        public TicketsController(ITicketRepository ticketRepository)
+        public TicketsController(ITicketRepository ticketRepository,
+            ITicketGroupRepository ticketGroupRepository)
         {
             _ticketRepository = ticketRepository;
+            _ticketGroupRepository = ticketGroupRepository;
         }
 
         #region Read
@@ -36,10 +40,13 @@ namespace WebApp.Controllers
 
         #region Create
         [HttpGet]
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
-            var request = new TicketCreateRequest
+            var groups = await _ticketGroupRepository.GetAsync();
+
+            var request = new TicketCreateViewModel
             {
+                Groups = groups.Select(p=> new SelectListItem { Text = p.Name, Value = p.Id.ToString() })
             };
 
             return View(request);
@@ -47,8 +54,12 @@ namespace WebApp.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(TicketCreateRequest request)
+        public async Task<IActionResult> Create(TicketCreateViewModel request)
         {
+            var groups = await _ticketGroupRepository.GetAsync();
+
+            request.Groups = groups.Select(p => new SelectListItem { Text = p.Name, Value = p.Id.ToString() });
+
             if (!ModelState.IsValid)
             {
                 return View(request);

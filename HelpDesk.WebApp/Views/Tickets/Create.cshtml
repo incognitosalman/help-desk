@@ -1,4 +1,5 @@
-﻿@{
+﻿@model TicketCreateViewModel
+@{
     ViewData["Title"] = "New Ticket";
 }
 
@@ -95,7 +96,7 @@
                                     <div class="w-100">
                                         <div class="form-floating border rounded">
                                             <!--begin::Select2-->
-                                            <select id="group"
+                                            <select asp-for="GroupId" asp-items="Model.Groups"
                                                     data-allow-clear="true"
                                                     data-control="select2"
                                                     data-hide-search="true"
@@ -103,9 +104,6 @@
                                                     class="form-select form-select-lg form-select-solid lh-2 py-3"
                                                     name="group">
                                                 <option></option>
-                                                <option value="1">IT Support</option>
-                                                <option value="2">Billing</option>
-                                                <option value="3">Customer Support</option>
                                             </select>
                                             <!--end::Select2-->
                                         </div>

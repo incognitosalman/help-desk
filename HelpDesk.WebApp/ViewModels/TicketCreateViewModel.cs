@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web.Mvc;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace HelpDesk.Domain.Resuests
+namespace HelpDesk.WebApp.ViewModels
 {
-    public class TicketCreateRequest
+    public class TicketCreateViewModel
     {
         public string Email { get; set; }
         public string Subject { get; set; } 

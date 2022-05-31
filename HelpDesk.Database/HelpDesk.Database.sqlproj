@@ -57,6 +57,7 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Tables" />
+    <Folder Include="Stored Procedures" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\TicketAttachment.sql" />
@@ -65,6 +66,11 @@
     <Build Include="Tables\TicketSource.sql" />
     <Build Include="Tables\TicketTag.sql" />
     <Build Include="Tables\Ticket.sql" />
+    <Build Include="Stored Procedures\usp_GetAllTickets.sql" />
+    <Build Include="Stored Procedures\usp_CreateTicket.sql" />
+    <Build Include="Stored Procedures\usp_DeleteTicket.sql" />
+    <Build Include="Stored Procedures\usp_GetTicketById.sql" />
+    <Build Include="Stored Procedures\usp_UpdateTicket.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Tables\HelpDeskDatabase.refactorlog" />

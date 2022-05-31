@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HelpDesk.Domain.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,7 +22,8 @@ namespace HelpDesk.Domain.Responses
         
         public string? Description { get; set; }
         public string AgentEmail { get; set; } = null!;
-        public string AgentFullName { get; set; } = null!;
+        public string AgentFirstName { get; set; } = null!;
+        public string AgentLastName { get; set; } = null!;
         public string Group { get; set; } = null!;
         public string Priority { get; set; } = null!;
         public string Source { get; set; } = null!;

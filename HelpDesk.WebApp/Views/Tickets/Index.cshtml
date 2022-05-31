@@ -470,7 +470,7 @@
 
                                                     <!--begin::Name-->
                                                     <div>
-                                                        <span class="fw-bold d-block">@item.AgentFullName</span>
+                                                        <span class="fw-bold d-block">@item.AgentFirstName</span>
                                                         <span class="fw-lighter small">@item.AgentEmail</span>
                                                     </div>
                                                     <!--end::Name-->
@@ -480,8 +480,8 @@
                                             <!--begin::Title-->
                                             <td>
                                                 <!--begin::Badges-->
-                                                <div class="badge badge-light-primary">inbox</div>
-                                                <div class="badge badge-light-warning">task</div>
+                                                <div class="badge badge-light-primary">@item.Group</div>
+                                                <div class="badge badge-light-warning">@item.Priority</div>
                                                 <!--end::Badges-->
                                                 <div class="text-dark mb-1">
                                                     <!--begin::Heading-->

@@ -58,6 +58,8 @@
     <Folder Include="Properties" />
     <Folder Include="Tables" />
     <Folder Include="Stored Procedures" />
+    <Folder Include="Stored Procedures\Ticket" />
+    <Folder Include="Stored Procedures\TicketGroup" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\TicketAttachment.sql" />
@@ -66,12 +68,12 @@
     <Build Include="Tables\TicketSource.sql" />
     <Build Include="Tables\TicketTag.sql" />
     <Build Include="Tables\Ticket.sql" />
-    <Build Include="Stored Procedures\usp_GetAllTickets.sql" />
-    <Build Include="Stored Procedures\usp_CreateTicket.sql" />
-    <Build Include="Stored Procedures\usp_DeleteTicket.sql" />
-    <Build Include="Stored Procedures\usp_GetTicketById.sql" />
-    <Build Include="Stored Procedures\usp_UpdateTicket.sql" />
-    <Build Include="Stored Procedures\usp_GetAllTicketGroups.sql" />
+    <Build Include="Stored Procedures\Ticket\usp_CreateTicket.sql" />
+    <Build Include="Stored Procedures\Ticket\usp_DeleteTicket.sql" />
+    <Build Include="Stored Procedures\Ticket\usp_GetAllTickets.sql" />
+    <Build Include="Stored Procedures\Ticket\usp_GetTicketById.sql" />
+    <Build Include="Stored Procedures\Ticket\usp_UpdateTicket.sql" />
+    <Build Include="Stored Procedures\TicketGroup\usp_GetAllTicketGroups.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Tables\HelpDeskDatabase.refactorlog" />
